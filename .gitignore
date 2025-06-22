@@ -1,0 +1,39 @@
+# ==================================
+# Regras do Gitignore para o Sniper Bot Ecosystem
+# ==================================
+
+# 1. Segredos e Configurações de Ambiente
+# Nunca salvar arquivos .env no repositório!
+.env
+smart-contract/.env
+
+# 2. Dados Persistentes do Docker
+# Ignora a pasta de dados do nosso banco de dados local
+data/
+
+# 3. Dependências e Arquivos de Build do Node.js/Hardhat
+# A pasta node_modules é gigante e pode ser reinstalada a qualquer momento
+smart-contract/node_modules/
+# Pastas de cache e artefatos geradas pelo Hardhat
+smart-contract/cache/
+smart-contract/artifacts/
+
+# 4. Arquivos de Build do Go
+# Ignora os arquivos executáveis que o 'go build' pode gerar
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# 5. Arquivos de Sistema Operacional e IDE
+# Arquivos comuns do macOS, Windows e editores de código
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# 6. Logs e Arquivos Temporários
+*.log
+*.log*
+*.tmp
