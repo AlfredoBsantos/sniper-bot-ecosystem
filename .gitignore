@@ -37,3 +37,4 @@ Thumbs.db
 *.log
 *.log*
 *.tmp
+.ipynb_checkpoints
