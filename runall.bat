@@ -10,7 +10,7 @@ echo =======================================================
 
 REM Passo 1: Iniciar a infraestrutura Docker em segundo plano (-d)
 echo [1/5] Iniciando infraestrutura Docker (Kafka, DB, etc.)...
-docker-compose up -d
+docker-compose up -d && sleep 20
 
 REM Verifica se o comando anterior foi bem sucedido
 if %errorlevel% neq 0 (
